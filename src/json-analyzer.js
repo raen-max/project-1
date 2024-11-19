@@ -46,7 +46,7 @@ export class JsonAnalyzer extends LitElement {
       }
   
       .AnalyzeButton:hover {
-        background-color: #0f9d58;
+        background-color: #9d940f;
         color: #fff;
         transform: scale(1.05); /* Button hover effect */
       }
@@ -60,7 +60,7 @@ export class JsonAnalyzer extends LitElement {
         margin-right: 10px;
         border-radius: 5px;
         box-shadow: none;
-        border: 2px solid #0f9d58; /* input border */
+        border: 2px solid #9d0f77; /* input border */
       }
   
       .results {
@@ -81,7 +81,7 @@ export class JsonAnalyzer extends LitElement {
         width: 320px;
         margin: 10px;
         padding: 15px;
-        border: 3px solid #0f309d; /* Increased border thickness */
+        border: 3px solid #9d9d0f; /* Increased border thickness */
         border-radius: 10px;
         background-color: #f9f9f9;
         height: 600px;
@@ -115,9 +115,9 @@ export class JsonAnalyzer extends LitElement {
       }
   
       details {
-        margin: 16px;
+        margin: 20px;
         padding: 16px;
-        background-color: #4285f4;
+        background-color: #f4428f;
       }
       summary {
         font-size: 24px;
@@ -127,15 +127,15 @@ export class JsonAnalyzer extends LitElement {
       }
   
       #btn {
-        background-color: #f4b400;
+        background-color: #d7bbd9;
         height: 45px;
         width: 120px;
-        border: 2px solid #0f9d58;
+        border: 2px solid #9d0f7c;
         box-shadow: none;
         font-family: var(--ddd-font-primary);
         font-size: 16px;
-        border-radius: 5px;
-        margin: 10px auto;
+        border-radius: 10px;
+        margin: 15px auto;
         transition: background-color 0.3s, transform 0.2s;
       }
   
@@ -151,13 +151,13 @@ export class JsonAnalyzer extends LitElement {
         }
       }
   
-      @media (max-width: 768px) {
+      @media (max-width: 800px) {
         .results {
           grid-template-columns: repeat(auto-fit, minmax(2, 1fr));
         }
       }
   
-      @media (max-width: 480px) {
+      @media (max-width: 500px) {
         .results {
           grid-template-columns: repeat(auto-fit, minmax(1, 1fr));
         }
@@ -230,11 +230,11 @@ export class JsonAnalyzer extends LitElement {
  
 
               <a href="${this.inputLink}/${item.slug}" target="_blank">
-                <button class="slug" id="btn">See Webpage</button>
+                <button class="slug" id="btn">Webpage</button>
               </a>
 
               <a href="${this.inputLink}/${item.location}" target="_blank">
-                <button class="location" id="btn">See Location</button>
+                <button class="location" id="btn">Location</button>
               </a>
             </div>
           `
